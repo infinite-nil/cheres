@@ -1,3 +1,5 @@
+const Inter = require("../../assets/fonts/Inter.ttf");
+
 const theme = {
   colors: {
     backgroundPrimary: "#0A0A0A",
@@ -23,4 +25,4 @@ const theme = {
   },
 };
 
-export { theme };
+export { theme, Inter };
