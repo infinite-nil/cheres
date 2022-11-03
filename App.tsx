@@ -1,8 +1,10 @@
 import { useCallback, useEffect } from "react";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
+import { ThemeProvider } from "styled-components";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
+
+import { theme } from "./src/ui/theme";
 
 export default function App() {
   const [isFontLoaded] = useFonts({
@@ -27,23 +29,10 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container} onLayout={onLayoutRootView}>
-      <Text style={styles.text}>
-        Open up App.tsx to start working on your app!
-      </Text>
-      <StatusBar style="auto" />
-    </View>
+    <ThemeProvider theme={theme}>
+      <View onLayout={onLayoutRootView}>
+        <Text>Open up App.tsx to start working on your app!</Text>
+      </View>
+    </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text: {
-    fontFamily: "Inter",
-  },
-});
