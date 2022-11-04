@@ -10,6 +10,7 @@ module.exports = function (api) {
           alias: {
             "@ui": "./src/ui",
             "@hooks": "./src/hooks",
+            "@utils": "./src/utils",
           },
         },
       ],
