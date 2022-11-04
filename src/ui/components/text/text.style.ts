@@ -1,4 +1,5 @@
 import styled, { DefaultTheme } from "styled-components/native";
+import { normalize } from "@ui/theme/normalize";
 
 export type Colors = keyof DefaultTheme["colors"];
 
@@ -12,7 +13,7 @@ const StyledText = styled.Text<StyledTextProps>`
   font-family: ${({ theme, heading }) =>
     heading ? theme.fontFamily.heading : theme.fontFamily.body};
   font-size: ${({ theme, heading }) =>
-    heading ? theme.fontSize.heading : theme.fontSize.body};
+    normalize(heading ? theme.fontSize.heading : theme.fontSize.body)}px;
   font-weight: ${({ theme, heading }) =>
     heading ? theme.fontWeight.heading : theme.fontWeight.body};
 `;
