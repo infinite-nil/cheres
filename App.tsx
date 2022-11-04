@@ -1,5 +1,6 @@
-import { TouchableWithoutFeedback, View } from "react-native";
-import { AppContainer, InsightCard, Text } from "@ui/components";
+import React from "react";
+import { View } from "react-native";
+import { AppContainer, Text, InsightsStack } from "@ui/components";
 import { useInsights } from "@hooks/use-insights";
 
 export default function App() {
@@ -9,18 +10,10 @@ export default function App() {
     <AppContainer>
       <View>
         <Text heading>How you doin’ 🦄</Text>
-        <TouchableWithoutFeedback onPress={handleInsightClick}>
-          <View>
-            {insights.map((insight, index) => (
-              <InsightCard
-                feeling={insight.feeling}
-                title={insight.title}
-                level={index}
-                key={insight.id}
-              />
-            ))}
-          </View>
-        </TouchableWithoutFeedback>
+        <InsightsStack
+          insights={insights}
+          onInsightPress={handleInsightClick}
+        />
       </View>
     </AppContainer>
   );

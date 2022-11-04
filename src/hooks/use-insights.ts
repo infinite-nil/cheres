@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 
-type Insight = {
+export type Insight = {
   id: string;
   feeling: string;
   title: string;
