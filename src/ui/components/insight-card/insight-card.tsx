@@ -11,12 +11,13 @@ import {
 type CardProps = PropsWithChildren & {
   feeling: string;
   title: string;
+  level: number;
 };
 
-const InsightCard = ({ feeling, title }: CardProps) => {
+const InsightCard = ({ feeling, title, level = 1 }: CardProps) => {
   return (
-    <CardContainer>
-      <LightEffect />
+    <CardContainer level={level}>
+      <LightEffect level={level} />
       <TextContainer>
         <FeelingContainer>
           <Text>{feeling}</Text>

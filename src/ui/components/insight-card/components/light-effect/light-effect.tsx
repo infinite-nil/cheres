@@ -1,6 +1,10 @@
+import { LevelProps } from "../../insight-card.styles";
+import { getFraction } from "@utils/styles";
 import { Background, Gradient, RoundGradient } from "./light-effect.styles";
 
-const LightEffect = () => {
+const LightEffect = ({ level }: LevelProps) => {
+  const endStop = getFraction(level);
+
   return (
     <>
       <RoundGradient
@@ -9,7 +13,7 @@ const LightEffect = () => {
           "rgba(255, 255, 255, .7)",
           "rgb(24, 24, 24)",
         ]}
-        locations={[0.1, 0.5, 0.9]}
+        locations={[0.1, 0.5, endStop]}
       />
       <Background />
       <Gradient colors={["rgba(24, 24, 24, 1)", "rgba(24, 24, 24, 0)"]} />
