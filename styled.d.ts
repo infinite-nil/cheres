@@ -8,7 +8,8 @@ declare module "styled-components" {
       foregroundVariant: string;
     };
     fontFamily: {
-      default: string;
+      heading: string;
+      body: string;
     };
     fontSize: {
       heading: number;

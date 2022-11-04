@@ -9,7 +9,8 @@ type StyledTextProps = {
 
 const StyledText = styled.Text<StyledTextProps>`
   color: ${({ color, theme }) => theme.colors[color]};
-  font-family: "Inter";
+  font-family: ${({ theme, heading }) =>
+    heading ? theme.fontFamily.heading : theme.fontFamily.body};
   font-size: ${({ theme, heading }) =>
     heading ? theme.fontSize.heading : theme.fontSize.body};
   font-weight: ${({ theme, heading }) =>

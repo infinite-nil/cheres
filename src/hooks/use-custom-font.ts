@@ -1,11 +1,12 @@
 import { useCallback, useEffect } from "react";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import { Inter } from "@ui/theme";
+import { InterRegular, InterBold } from "@ui/theme";
 
 const useCustomFont = () => {
   const [isFontLoaded] = useFonts({
-    Inter,
+    "Inter-Regular": InterRegular,
+    "Inter-Bold": InterBold,
   });
 
   useEffect(() => {

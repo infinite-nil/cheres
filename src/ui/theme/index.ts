@@ -1,4 +1,5 @@
-const Inter = require("../../assets/fonts/Inter.ttf");
+const InterRegular = require("../../assets/fonts/Inter-Regular.ttf");
+const InterBold = require("../../assets/fonts/Inter-Bold.ttf");
 
 const theme = {
   colors: {
@@ -7,7 +8,8 @@ const theme = {
     foregroundVariant: "#C8C8C8",
   },
   fontFamily: {
-    default: "Inter",
+    heading: "Inter-Bold",
+    body: "Inter-Regular",
   },
   fontSize: {
     heading: 16,
@@ -25,4 +27,4 @@ const theme = {
   },
 };
 
-export { theme, Inter };
+export { theme, InterRegular, InterBold };
