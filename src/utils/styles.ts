@@ -1,4 +1,4 @@
-const getFraction = (level: number) => {
+const getGradientStop = (level: number) => {
   return 1 - level / 10;
 };
 
@@ -14,4 +14,4 @@ const getCardPosition = (level: number) => {
   return level * 8;
 };
 
-export { getFraction, getZIndex, getCardSize, getCardPosition };
+export { getGradientStop, getZIndex, getCardSize, getCardPosition };

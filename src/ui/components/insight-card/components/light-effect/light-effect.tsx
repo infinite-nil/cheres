@@ -1,9 +1,9 @@
 import { LevelProps } from "../../insight-card.styles";
-import { getFraction } from "@utils/styles";
+import { getGradientStop } from "@utils/styles";
 import { Background, Gradient, RoundGradient } from "./light-effect.styles";
 
 const LightEffect = ({ level }: LevelProps) => {
-  const endStop = getFraction(level);
+  const endStop = getGradientStop(level);
 
   return (
     <>
