@@ -1,11 +1,5 @@
 # Mobile Engineer bar raiser
 
-| iOS                                                                                                  | Android                                                                                                  |
-| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| <video width="320" src="https://raw.githubusercontent.com/infinite-nil/assets/main/ios.mp4"></video> | <video width="337" src="https://raw.githubusercontent.com/infinite-nil/assets/main/android.mp4"></video> |
-
-# Development
-
 ## Running on your device
 
 ```
@@ -21,3 +15,9 @@ $ npx expo start
 ```
 
 Based on your environment press `i` or `a` to open the desired simulator.
+
+## Demo
+
+https://user-images.githubusercontent.com/90731442/200094421-2a3f73d2-56fe-4b10-83ac-77b4dc0e1d31.mp4
+
+https://user-images.githubusercontent.com/90731442/200094448-c0d830f0-c0fe-4b13-a7c9-0fd1ee59c1d9.mp4
