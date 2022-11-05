@@ -4,7 +4,7 @@ import { normalize } from "@utils/normalize";
 export type Colors = keyof DefaultTheme["colors"];
 
 type StyledTextProps = {
-  color: keyof DefaultTheme["colors"];
+  color: Colors;
   heading?: boolean;
 };
 
