@@ -1,6 +1,6 @@
 import { fireEvent } from "@testing-library/react-native";
 import { render } from "../../../utils/test-utils";
-import { InsightsStack } from "./insigts-stack";
+import { InsightsStack } from "./insights-stack";
 
 const mock = [
   {
