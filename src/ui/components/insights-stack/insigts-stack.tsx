@@ -10,7 +10,10 @@ type InsightsStackProps = {
 
 const InsightsStack = ({ insights, onInsightPress }: InsightsStackProps) => {
   return (
-    <TouchableWithoutFeedback onPress={onInsightPress}>
+    <TouchableWithoutFeedback
+      onPress={onInsightPress}
+      accessibilityRole="button"
+    >
       <View>
         {insights.map((insight, index) => (
           <InsightCard
