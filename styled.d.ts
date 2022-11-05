@@ -12,6 +12,7 @@ declare module "styled-components" {
       body: string;
     };
     fontSize: {
+      feeling: number;
       heading: number;
       body: number;
     };

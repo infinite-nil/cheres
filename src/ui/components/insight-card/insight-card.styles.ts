@@ -1,6 +1,7 @@
 import styled from "styled-components/native";
 import Animated from "react-native-reanimated";
 import { getZIndex, getCardSize, getCardPosition } from "@utils/styles";
+import { StyledText } from "../text/text.style";
 
 export type LevelProps = {
   level: number;
@@ -28,9 +29,19 @@ const FeelingContainer = styled.View`
   justify-content: center;
 `;
 
+const FeelingText = styled(StyledText).attrs({ color: "foregroundPrimary" })`
+  font-size: ${({ theme }) => theme.fontSize.feeling}px;
+`;
+
 const TitleContainer = styled.View`
   flex: 1;
   margin-left: ${({ theme }) => theme.spacing.lg}px;
 `;
 
-export { CardContainer, TextContainer, FeelingContainer, TitleContainer };
+export {
+  CardContainer,
+  FeelingContainer,
+  FeelingText,
+  TextContainer,
+  TitleContainer,
+};

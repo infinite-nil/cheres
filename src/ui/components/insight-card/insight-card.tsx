@@ -5,6 +5,7 @@ import { LightEffect } from "./components/light-effect/light-effect";
 import {
   CardContainer,
   FeelingContainer,
+  FeelingText,
   TextContainer,
   TitleContainer,
 } from "./insight-card.styles";
@@ -28,7 +29,7 @@ const InsightCard = ({ feeling, title, level = 0 }: CardProps) => {
       <LightEffect level={level} />
       <TextContainer>
         <FeelingContainer>
-          <Text>{feeling}</Text>
+          <FeelingText>{feeling}</FeelingText>
         </FeelingContainer>
         <TitleContainer>
           <Text>{title}</Text>

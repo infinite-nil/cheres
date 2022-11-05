@@ -12,6 +12,7 @@ const theme = {
     body: "Inter-Regular",
   },
   fontSize: {
+    feeling: 26,
     heading: 16,
     body: 15,
   },
