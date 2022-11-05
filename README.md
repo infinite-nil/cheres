@@ -64,8 +64,8 @@ $ npx expo start
 
 Scan the generated QR code on your terminal and you should see the app open in the `Expo Go` client.
 
-## Demo
+## Demos
 
-https://user-images.githubusercontent.com/90731442/200094421-2a3f73d2-56fe-4b10-83ac-77b4dc0e1d31.mp4
+https://user-images.githubusercontent.com/90731442/200128950-4c2d97b5-7093-4cc5-a2ed-e2be30f65203.mp4
 
-https://user-images.githubusercontent.com/90731442/200094448-c0d830f0-c0fe-4b13-a7c9-0fd1ee59c1d9.mp4
+https://user-images.githubusercontent.com/90731442/200128952-f6d2418d-fbb8-49d5-8f8d-b405fa40457f.mp4
