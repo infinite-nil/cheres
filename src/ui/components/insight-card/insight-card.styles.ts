@@ -1,19 +1,20 @@
 import styled from "styled-components/native";
-import { getFraction, getZIndex } from "@utils/styles";
+import Animated from "react-native-reanimated";
+import { getZIndex, getCardSize, getCardPosition } from "@utils/styles";
 
 export type LevelProps = {
   level: number;
 };
 
-const CardContainer = styled.View<LevelProps>`
+const CardContainer = styled(Animated.View)<LevelProps>`
+  align-self: center;
   border-radius: ${({ theme }) => theme.spacing.lg}px;
   height: 88px;
-  overflow: hidden;
   margin-top: ${({ theme }) => theme.spacing.md}px;
+  overflow: hidden;
   position: absolute;
-  top: ${({ level }) => level * 8}px;
-  transform: scaleX(${({ level }) => getFraction(level)});
-  width: 100%;
+  top: ${({ level }) => getCardPosition(level)}px;
+  width: ${({ level }) => getCardSize(level)};
   z-index: ${({ level }) => getZIndex(level)};
 `;
 
