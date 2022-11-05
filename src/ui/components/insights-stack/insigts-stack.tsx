@@ -1,6 +1,6 @@
 import React from "react";
 import { TouchableWithoutFeedback, View } from "react-native";
-import { Insight } from "@hooks/use-insights";
+import { Insight } from "@utils/data";
 import { InsightCard } from "../insight-card/insight-card";
 
 type InsightsStackProps = {

@@ -13,6 +13,7 @@ const useCustomFont = () => {
     async function prepare() {
       await SplashScreen.preventAutoHideAsync();
     }
+
     prepare();
   }, []);
 
