@@ -13,22 +13,22 @@ const ITEMS: Insight[] = [
   {
     id: "2",
     feeling: "📈",
-    title: "BTC value increased 3.53% today. Price: $21176,90",
+    title: "BTC value increased 3.53% today. Price: $21176,90.",
   },
   {
     id: "3",
     feeling: "🖼️",
-    title: "2 new trending NFT's collections discovered",
+    title: "2 new trending NFT's collections discovered.",
   },
   {
     id: "4",
     feeling: "🚀",
-    title: "This month you invested more than in the last 3 months",
+    title: "This month you invested more than in the last 3 months.",
   },
   {
     id: "5",
     feeling: "📉",
-    title: "ETH value decreased 0.29% today. Price: $1644,69",
+    title: "ETH value decreased 0.29% today. Price: $1644,69.",
   },
   {
     id: "6",
