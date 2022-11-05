@@ -32,6 +32,11 @@ const ITEMS: Insight[] = [
     feeling: "📉",
     title: "ETH value decreased 0.29% today. Price: $1644,69",
   },
+  {
+    id: "6",
+    feeling: "✅",
+    title: "You're all caught up. Great job!",
+  },
 ];
 
 const useInsights = () => {
@@ -40,17 +45,19 @@ const useInsights = () => {
     return insights.slice(0, 3);
   }, [insights]);
 
-  const handleInsightClick = () => {
+  const handleInsightCycle = () => {
     setInsights((current) => {
-      let [head, ...tail] = current;
+      if (current.length <= 1) return current;
 
-      return [...tail, head];
+      current.shift();
+
+      return [...current];
     });
   };
 
   return {
     insights: insightsView,
-    handleInsightClick,
+    handleInsightCycle,
   };
 };
 

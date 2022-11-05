@@ -4,7 +4,7 @@ import { AppContainer, Text, InsightsStack } from "@ui/components";
 import { useInsights } from "@hooks/use-insights";
 
 export default function App() {
-  const { insights, handleInsightClick } = useInsights();
+  const { insights, handleInsightCycle } = useInsights();
 
   return (
     <AppContainer>
@@ -12,7 +12,7 @@ export default function App() {
         <Text heading>How you doin’ 🦄</Text>
         <InsightsStack
           insights={insights}
-          onInsightPress={handleInsightClick}
+          onInsightPress={handleInsightCycle}
         />
       </View>
     </AppContainer>
