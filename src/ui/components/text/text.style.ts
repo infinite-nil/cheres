@@ -1,5 +1,5 @@
 import styled, { DefaultTheme } from "styled-components/native";
-import { normalize } from "@ui/theme/normalize";
+import { normalize } from "@utils/normalize";
 
 export type Colors = keyof DefaultTheme["colors"];
 
